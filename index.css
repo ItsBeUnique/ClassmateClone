@@ -1,0 +1,644 @@
+
+body, html {
+  height: 100%;
+}
+
+::-webkit-scrollbar{
+  width: 9px;
+}
+::-webkit-scrollbar-track{
+  background: #182222 ;
+}
+
+::-webkit-scrollbar-thumb{
+  border-radius: 100vh;
+  height: 5px;
+  background: linear-gradient(rgb(197, 3, 245),rgb(22, 177, 169) );
+}
+
+body {
+ 
+  margin: auto; 
+  user-select: none;
+  height: 100%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  background-size: cover;
+  background-image: url('https://images.unsplash.com/photo-1601824772573-1036033c48b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80');
+  backface-visibility: 4px;
+  background-repeat: no-repeat;
+  align-items: center;
+  background-attachment: fixed;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+
+  @keyframes gradient {
+  0%{
+  background-position: 0% 0%;
+  }
+  50% {
+  background-position: 100% 100%;
+  } 
+  100% {
+  background-position: 0% 0%;
+  }
+}
+
+.front{
+  height: 100%;
+  background-image: url('https://images.unsplash.com/photo-1608086042659-2a8b93921570?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80');
+  background-position: center;
+  background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+}
+.para{
+  color: white;
+  height: 27px;
+  align-items: center;
+  text-align: center;
+  float: right;
+  width: 100%;
+
+}
+.para p{
+  float: right;
+    margin: 24px 170px;
+    width: 332px;
+    text-align: start;
+    /* font-family: "Nanum Brush Script", cursive; */
+
+}
+.navbar1,.navbar2,.footer1,.footer2{
+  width: 100%;
+}
+#letsgo{
+ 
+  position: fixed;
+  cursor: pointer;
+  right: 0;
+  bottom: 0;
+  margin: 0px 24px 73px 0px;
+  border-radius: 10px;
+}
+
+.links{
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  display: inline;
+  
+}
+.links:hover{
+  color: rgb(255, 255, 255);
+  
+  border-bottom : 2px  solid rgb(131 116 247);
+  border-top : 2px  solid rgb(131 116 247);
+  
+ 
+   
+}
+ .box {
+
+  transform: translateX(400%);
+  transition: transform 0.4s ease;
+  }
+  
+  .box:nth-of-type(even) {
+  transform: translateX(-400%);
+  }
+  
+  .box.show{
+  transform: translatex(0);
+  }
+  
+.navbar1 {
+  height: 70px;
+  font-size: 15px;
+  color: white;
+}
+ .front h1{
+  margin: 212px 185px 0px 0px;
+  float: right;
+  font-size: 41px;
+  color: white;
+  font-family: 'Marhey', cursive;
+  text-align: center;
+}
+
+
+
+#animation span { 
+  position: absolute; 
+  display: block;
+  }
+  
+#animation  { 
+  font-family: 'Tangerine', cursive;
+  font-size: 27px;
+  margin-top: 47px;
+  width: 215px;
+  display: block;
+  background: linear-gradient( 320deg, rgb(255 0 116 / 52%) 3%, rgb(22 26 22) 38%, rgb(255 0 116 / 52%) 68%, rgb(0 0 0) 98% );
+  padding: 3px 15px 0px 13px;
+  border-radius: 0px;
+  overflow: hidden;
+  transition: .5s;
+}
+  
+
+  
+  #animation a span { 
+    position: absolute; 
+    display: block;
+    }
+    
+    #animation span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%; 
+    height: 2px;
+    background: linear-gradient(90deg, transparent,#03e9f4);
+    animation: btn-anim1 1s linear infinite;
+    animation-delay: .25s 
+    }
+    @keyframes btn-anim1 {
+      0% { 
+      left: -100%;
+      } 
+      50%, 100% { 
+      left: 100%; 
+      } 
+    }
+      
+      #animation span:nth-child(2) {
+      top: -100%; 
+      right: 0;
+      width: 2px;       
+      height: 100%;       
+      background: linear-gradient(180deg, transparent, #03e9f4);
+      animation: btn-anim2 1s linear infinite;   
+      animation-delay: .5s      
+      }
+      
+      @keyframes btn-anim2 {
+      0% { 
+      top: -100%; 
+      }
+      50%,100% { 
+      top: 100%;   
+      } 
+    }
+      
+      #animation span:nth-child(3) {
+      bottom: 0; 
+      right: -100%;
+      width: 100%;  
+      height: 2px;       
+      background: linear-gradient(270deg, transparent,#03e9f4);
+      animation: btn-anim3 1s linear infinite; 
+      animation-delay: .75s
+      }
+
+      @keyframes btn-anim3 {
+        0% { 
+        right: -100%; 
+        }
+        50%,100% { 
+        right: 100%;   
+        } 
+      }
+   
+      #animation  span:nth-child(4) {
+        bottom: -100%; 
+        left: 0;
+        width: 2px;       
+        height: 100%;       
+        background: linear-gradient(360deg, transparent, #03e9f4);
+        animation: btn-anim4 1s linear infinite;   
+        animation-delay: 1s      
+        }
+        
+        @keyframes btn-anim4 {
+        0% { 
+        bottom: -100%; 
+        }
+        50%,100% { 
+        bottom: 100%;   
+        } 
+      }
+
+      #img-cart{
+        height: 29px;
+        margin-top: 10px;
+      }
+.navbar2 {
+  justify-content: center;
+  align-items: center;
+  font-family: 'Lexend Giga', sans-serif;
+  background-color: white ;
+  height: 60px;
+  
+}
+
+.container-fluid {
+  height: 55px;
+}
+
+#navbarSupportedContent {
+  display: flex;
+  font-size: 16px;
+  justify-content: center;
+}
+
+.navbar-brand {
+  font-size: 32px;
+  color: #ffffff;
+  font-family: "Nanum Brush Script", cursive;
+  margin-left: 162px;
+}
+
+.white-color { 
+  font-size: 17px;
+  border-radius: 13px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #130e0e4a;
+  backdrop-filter: blur(62px);
+}
+.white-color:hover {
+
+    background: #03e9f4; 
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 0 0 0px #f403a4,   
+                0 0 5px #03e9f4,
+                0 0 5px #03e9f4,
+                0 0 100px #03e9f4; 
+
+}
+
+#navbarNav {
+  justify-content: right;
+  margin-right: 10px;
+}
+
+.space {
+  margin-right: 15px;
+}
+
+.nav2-link {
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  padding-right: 62px;
+  font-weight: 600;
+}
+
+/* First Slider  --------------------------------------------*/
+.slider1 {
+  width: 78%;
+  margin: auto;
+  margin-top: 110px;
+}
+
+.box2 {
+  display: flex;
+  height: 397px;
+  background-color: #ffb8b8;
+  width: 78%;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.box2_heading {
+  font-weight: 600;
+  font-size: 35px;
+  margin-top: 80px;
+}
+
+.image_part2 {
+  padding-left: 78px;
+  width: 74%;
+}
+
+.image_part2 p {
+  font-weight: 400;
+}
+
+.image_part2 button {
+  padding: 10px 21px;
+  margin-top: 18px;
+  font-weight: 400;
+  border: 0px;
+  border-radius: 30px;
+}
+
+.points {
+  display: flex;
+  padding: 0px;
+}
+
+.points li {
+  margin: 7px 38px 0px 18px;
+  list-style: none;
+}
+
+.points p {
+  height: 42px;
+  width: 44px;
+  background-color: #f18e8e;  
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.number {
+  padding: 8px 17px;
+}
+
+/* Box3 ------------------------------------- */
+.box3 {
+  display: flex;
+  height: 668px;
+  width: 78%;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.image_div {
+  height: 100%;
+  width: 25%;
+}
+
+.next_boxes {
+  margin-left: 9px;
+  height: 100%;
+  width: 75%;
+}
+
+.next_boxes1 {
+  margin-left: 18px;
+  display: flex;
+  flex-direction: row;
+  height: 154px;
+    width: 900px; 
+}
+
+#box1 h3 {
+  margin: 32px;
+  color: white;
+}
+
+#box2 h3 {
+  margin: 32px;
+  color: #ffd162;
+}
+
+#box1 img {
+  margin-left: 240px;
+}
+
+#box2 img {
+  height: 141px;
+  width: 410px;
+  margin: 4px 0px 0px 71px;
+}
+
+#box4 img {
+  height: 81px;
+  width: 302px;
+  margin: 34px 0px 0px 77px;
+}
+
+#img1 {
+  height: 80px;
+  width: 126px;
+  margin: 5px 0px 0px 55px;
+}
+
+#img2 {
+  height: 154px;
+  width: 256px;
+  margin: 0px 0px 0px 170px;
+}
+
+#box3 h2 {
+  margin: 0px 39px;
+  color: #c6101e;
+}
+
+#box4 h3 {
+  margin: 38px;
+  color: #001157;
+}
+
+.next_boxes1 button {
+  font-size: 15px;
+  border-radius: 33px;
+  height: 39px;
+  width: 110px;
+  border: 0px;
+  margin: auto;
+}
+
+.b {
+  margin-top: 16px;
+}
+
+#box1 {
+  background-image: url("	https://cdn.classmateshop.co.in/live/Front-Assets/FrontEnd/Compressed/marvel-book-bg.png");
+  background-repeat: no-repeat;
+}
+
+#box2 {
+  background-image: url("https://cdn.classmateshop.co.in/live/landing_pages/Bulk_Order/scientist-book-bg.svg");
+  background-repeat: no-repeat;
+}
+
+#box3 {
+  background-image: url("https://cdn.classmateshop.co.in/live/Front-Assets/FrontEnd/Compressed/spiderman-book-bg.png");
+  background-repeat: no-repeat;
+  background-color: white;
+}
+
+#box4 {
+  background-color: #76be86;
+}
+
+/* Box4 ------------------------------------- */
+.box4 {
+  display: flex;
+  height: 344px;
+  width: 1237px;
+  background-color: #e5ac75;
+  background-image: url("https://cdn.classmateshop.co.in/live/Front-Assets/FrontEnd/Compressed/ar-bg-pattern.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.box4 h1 {
+  margin: 65px 1px 1px 55px;
+}
+
+.box4 p {
+  margin: 42px 56px;
+  font-size: 14px;
+}
+
+.box4 img {
+  margin-left: 161px;
+}
+
+.box4 button {
+  font-size: 15px;
+  border-radius: 33px;
+  height: 40px;
+  width: 140px;
+  border: 0px;
+  margin: 1px 57px;
+}
+
+h2 {
+  margin-top: 27px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 37px;
+  color: whitesmoke ;
+}
+
+/* Box5 ------------------------------------- */
+.box5 {
+  display: flex;
+  height: 743px;
+  width: 1253px;
+  margin: auto;
+  margin-top: 40px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+
+
+
+/* __review card____________________________________________________________________________________________________*/
+
+
+  .card { 
+    height: 300px;
+    width: 300px;
+    border-radius: 4px;
+    display: grid;
+    place-items: center;
+    grid-template-areas: "main";
+    overflow: hidden;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 12px;   
+    }
+    
+    .card > * { 
+    grid-area: main;     
+    }
+
+    .card > .image { 
+    width: 100%;
+    aspect-ratio: 1/1;   
+    object-fit: cover;
+    transition: transform 400ms, filter 400ms; }
+        
+    .card> .text { 
+    opacity: 0;
+    color: #fd6336; 
+    font-size: 1.8em;
+    transition: opacity 400ms, transform 400ms; 
+}
+.card:is(:hover, focus) > .image { 
+    transform: scale(1.1); 
+    filter: brightness(0.4);
+}
+.card:is(:hover, focus) > .text { 
+    transform: scale(1.2); 
+    opacity: 1;
+        
+        }
+/* __box6____________________________________________________________________________________________________*/
+.common {
+  display: flex;
+  height: 472px;
+  width: 78%;
+  margin: auto;
+  margin-top: 40px;
+  
+}
+
+.footer1{
+  height: 382px;
+  padding-left: 274px;
+  display: flex;
+  margin-top: 40px;
+  background-size: cover;
+  background-color: #000000bd;
+  /* background-image:url('https://cdn.classmateshop.co.in/live/Front-Assets/FrontEnd/FOOTER%20PATTERN.svg');  */
+}
+.footer2{
+  height: 74px;
+  padding-top: 28px;
+  color: #9ea3a7;
+  background: linear-gradient(32deg, rgb(40, 59, 99),rgb(55, 48, 82),rgb(1, 119, 109) );
+}
+.footer_links,.footer_links:hover{
+  text-decoration: none;
+  color: #9ea3a7;
+}
+
+.footer_boxes{
+  height: 100%;
+  width: 207px;
+  color: #9ea3a7;
+
+}
+
+.footer1 h6{
+  font-size: 20px;
+  color: #f76432;
+  margin: 30px 0px;
+}
+
+#f_box3{
+  width: 323px;
+}
+
+#f_box1 h5{
+  color: #f76432;
+  margin-top: 100px;
+}
+
+.f_box_color{
+  color: white;
+}
+.footer_boxes img{
+  height: 32px;
+ 
+}
+.image_adj{
+  margin: 0px 3px;
+}
+
+#span1{
+  color: white;
+  margin: 170px;
+}
+
+#footer2_span1{
+float: left;
+margin-left: 164px;
+}
+#footer2_span2{
+  float: right;
+  margin-right: 170px;
+}
