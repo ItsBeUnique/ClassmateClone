@@ -8,7 +8,10 @@
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0">
     <title>Terms & Conditions - Classmateshop</title>
-  <link rel="shortcut icon" href="https://img.icons8.com/external-xnimrodx-lineal-color-xnimrodx/2x/external-gift-black-friday-xnimrodx-lineal-color-xnimrodx-3.png" type="image/x-icon" style="height: 100%; width: 100%;">  
+    <link rel="shortcut icon"
+        href="https://img.icons8.com/external-xnimrodx-lineal-color-xnimrodx/2x/external-gift-black-friday-xnimrodx-lineal-color-xnimrodx-3.png"
+        type="image/x-icon"
+        style="height: 100%; width: 100%;">
 
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.rtl.min.css"
@@ -69,12 +72,94 @@
         list-style-type: circle;
         margin-left: 39px;
     }
+
+    @media(max-width:400px) {
+
+        .data {
+            width: 100%;
+            padding: 17px;
+        }
+
+        .data p {
+            font-size: 10px;
+        }
+
+        .heading h3 {
+            font-size: 20px;
+        }
+
+        .data h6 {
+            font-size: 13px;
+        }
+
+        .navbar-brand img {
+            display: none;
+        }
+
+        .data li,
+        .insider_li {
+            font-size: 10px;
+        }
+
+        .footer1 {
+            display: flex;
+            width: 100%;
+            margin: 0;
+            /* overflow: hidden; */
+            height: auto;
+            text-align: center;
+            padding: 0;
+            flex-wrap: wrap;
+        }
+
+        .footer1 p {
+            border: 1px solid;
+            margin: 17px;
+            padding: 5px;
+            font-size: 12px;
+            box-shadow: 1px 4px 4px white;
+            background-color: #222324;
+            border-radius: 16px;
+        }
+
+        .footer_boxes {
+            margin: 0;
+            height: auto;
+            width: 100%;
+            padding: 0;
+        }
+
+        .footer_links {
+            text-align: center;
+        }
+
+        #f_box1 h5 {
+            margin-top: 40px;
+        }
+
+        #f_box3 {
+            width: 100%;
+        }
+        .footer2{
+            height: 116px;
+        }
+
+        #letsgo, .footer2 {
+            margin: 0;
+        }
+        #footer2_span1,#footer2_span2 {
+            margin: 0;
+            font-size: 13px;
+            float: none;
+            text-align: center;
+}
+    }
 </style>
 
 <body>
     <img id="letsgo"
         onclick="gototop()"
-        src="https://img.icons8.com/external-phatplus-solid-phatplus/2x/external-up-arrow-essential-phatplus-solid-phatplus.png"
+        src="https://img.icons8.com/nolan/512/launched-rocket.png"
         alt=""
         style="height: 59px; width: 57px;">
 
@@ -83,7 +168,8 @@
           <div class="
             container-fluid">
             <a class="navbar-brand"
-                href="/"><img src="https://o.remove.bg/downloads/dd44997b-b921-4382-81cd-b3a8ed9a74a1/classmate_logo-removebg-preview.png"
+                href="/"><img id="brand_image"
+                    src="https://o.remove.bg/downloads/dd44997b-b921-4382-81cd-b3a8ed9a74a1/classmate_logo-removebg-preview.png"
                     alt=""
                     srcset=""
                     style="height: 53pxpx;width: 237px;"></a>
@@ -135,8 +221,9 @@
             </div>
     </div>
     </nav>
-    </div id="container">
-    <div>
+    </div>
+    <div id="container">
+ 
         <div class="heading">
             <h3>Terms & Conditions</h3>
         </div>
@@ -660,115 +747,110 @@
     </div>
     <div class="footer1">
         <div id="f_box1"
-          class="footer_boxes">
-          <h6>Company</h6>
-          <a href=""
-            class="footer_links">
-            <p>Press & Media</p>
-          </a>
-          <a href=""
-            class="footer_links">
-            <p>Inquiry</p>
-          </a>
-          <a href="https://cdn.classmateshop.co.in/live/assets/31-ITC%20E_Product%20catalogue%20Final_08_02_19.pdf"
-            class="footer_links">
-            <p>Download Catalogue</p>
-          </a>
-          <h5>My Account</h5>
-          <a href=""
-            class="footer_links">
-            <p>My Orders</p>
-          </a>
+            class="footer_boxes">
+            <h6>Company</h6>
+            <a href=""
+                class="footer_links">
+                <p>Press & Media</p>
+            </a>
+            <a href=""
+                class="footer_links">
+                <p>Inquiry</p>
+            </a>
+            <a href="https://cdn.classmateshop.co.in/live/assets/31-ITC%20E_Product%20catalogue%20Final_08_02_19.pdf"
+                class="footer_links">
+                <p>Download Catalogue</p>
+            </a>
+            <h5>My Account</h5>
+            <a href=""
+                class="footer_links">
+                <p>My Orders</p>
+            </a>
         </div>
         <div id="f_box2"
-          class="footer_boxes">
-          <h6>Misc</h6>
-          <a href="terms-conditions.html"
-            class="footer_links">
-            <p>Terms & Conditions</p>
-          </a>
-          <a href="privacy-policy.html"
-            class="footer_links">
-            <p>Privacy Policy</p>
-          </a>
-          <a href="return-policy.html"
-            class="footer_links">
-            <p>Return Policy</p>
-          </a>
+            class="footer_boxes">
+            <h6>Misc</h6>
+            <a href="terms-conditions.html"
+                class="footer_links">
+                <p>Terms & Conditions</p>
+            </a>
+            <a href="privacy-policy.html"
+                class="footer_links">
+                <p>Privacy Policy</p>
+            </a>
+            <a href="return-policy.html"
+                class="footer_links">
+                <p>Return Policy</p>
+            </a>
         </div>
         <div id="f_box3"
-          class="footer_boxes">
-          <h6>Contact Us</h6>
-          <p>care@classmateshop.com</p>
-          <p>18004253242</p>
-          <p>Toll-free number (Mon to<br> Fri from 9:30 am till 5:30<br> pm)</p>
+            class="footer_boxes">
+            <h6>Contact Us</h6>
+            <p>care@classmateshop.com</p>
+            <p>18004253242</p>
+            <p>Toll-free number (Mon to<br> Fri from 9:30 am till 5:30<br> pm)</p>
         </div>
         <div id="f_box4"
-          class="footer_boxes">
-          <h6>Follow us on</h6>
-          <p>Classmate</p>
-          <a href="https://www.facebook.com/Classmate/"
-            target="_blank"><img class="image_adj"
-              src="https://img.icons8.com/fluency/2x/facebook.png"
-              alt=""
-              srcset=""
-              style="height: 42px; width: 42px;"></a>
-          <a href="https://twitter.com/classmatebyitc?lang=en"
-            target="_blank"><img class="image_adj"
-              src="https://img.icons8.com/color/2x/twitter-squared.png"
-              alt=""
-              srcset=""
-              style="height: 42px; width: 42px;"></a>
-          <a href="https://www.instagram.com/classmatebyitc/"
-            target="_blank"><img class="image_adj"
-              src="https://img.icons8.com/3d-fluency/2x/instagram-new.png"
-              alt=""
-              srcset=""
-              style="height: 42px; width: 42px;"></a>
-          <a href="https://www.youtube.com/channel/UC2XJG6wkwnlJ7xyNzM3ftjg"
-            target="_blank"><img class="image_adj"
-              src="https://img.icons8.com/color/2x/youtube-play.png"
-              alt=""
-              srcset=""
-              style="height: 48px; width: 44px;"></a>
-          <p style="margin-top: 4px;">Papercraft</p>
-          <a href="https://www.facebook.com/paperkraft/"
-            target="_blank"><img class="image_adj"
-              src="https://img.icons8.com/fluency/2x/facebook.png"
-              alt=""
-              srcset=""
-              style="height: 42px; width: 42px;"></a>
-          <a href="https://www.instagram.com/paperkraft_itc/?hl=en"
-            target="_blank"><img class="image_adj"
-              src="https://img.icons8.com/3d-fluency/2x/instagram-new.png"
-              alt=""
-              srcset=""
-              style="height: 42px; width: 42px;"></a>
-    
+            class="footer_boxes">
+            <h6>Follow us on</h6>
+            <p>Classmate</p>
+            <a href="https://www.facebook.com/Classmate/"
+                target="_blank"><img class="image_adj"
+                    src="https://img.icons8.com/fluency/2x/facebook.png"
+                    alt=""
+                    srcset=""
+                    style="height: 42px; width: 42px;"></a>
+            <a href="https://twitter.com/classmatebyitc?lang=en"
+                target="_blank"><img class="image_adj"
+                    src="https://img.icons8.com/color/2x/twitter-squared.png"
+                    alt=""
+                    srcset=""
+                    style="height: 42px; width: 42px;"></a>
+            <a href="https://www.instagram.com/classmatebyitc/"
+                target="_blank"><img class="image_adj"
+                    src="https://img.icons8.com/3d-fluency/2x/instagram-new.png"
+                    alt=""
+                    srcset=""
+                    style="height: 42px; width: 42px;"></a>
+            <a href="https://www.youtube.com/channel/UC2XJG6wkwnlJ7xyNzM3ftjg"
+                target="_blank"><img class="image_adj"
+                    src="https://img.icons8.com/color/2x/youtube-play.png"
+                    alt=""
+                    srcset=""
+                    style="height: 48px; width: 44px;"></a>
+            <p style="margin-top: 4px;">Papercraft</p>
+            <a href="https://www.facebook.com/paperkraft/"
+                target="_blank"><img class="image_adj"
+                    src="https://img.icons8.com/fluency/2x/facebook.png"
+                    alt=""
+                    srcset=""
+                    style="height: 42px; width: 42px;"></a>
+            <a href="https://www.instagram.com/paperkraft_itc/?hl=en"
+                target="_blank"><img class="image_adj"
+                    src="https://img.icons8.com/3d-fluency/2x/instagram-new.png"
+                    alt=""
+                    srcset=""
+                    style="height: 42px; width: 42px;"></a>
+
         </div>
         <div id="f_box5"
-          class="footer_boxes">
-          <p style="margin-top: 83px;">Classmate Pulse</p>
-          <a href="https://www.instagram.com/pulsebyclassmate/"
-            target="_blank"><img class="image_adj"
-              src="https://img.icons8.com/3d-fluency/2x/instagram-new.png"
-              alt=""
-              srcset=""
-              style="height: 42px; width: 42px;"></a>
-    
+            class="footer_boxes">
+            <p style="margin-top: 83px;">Classmate Pulse</p>
+            <a href="https://www.instagram.com/pulsebyclassmate/"
+                target="_blank"><img class="image_adj"
+                    src="https://img.icons8.com/3d-fluency/2x/instagram-new.png"
+                    alt=""
+                    srcset=""
+                    style="height: 42px; width: 42px;"></a>
+
         </div>
-      </div>
+    </div>
     <div class="footer2">
         <p id="footer2_span1">Copyright © ITC Ltd. All rights reserved.</p>
-        <p id="footer2_span2">Certified with <img src="https://img.icons8.com/emoji/2x/heart-suit.png"
+        <p id="footer2_span2">Crafted with <img src="https://img.icons8.com/emoji/2x/heart-suit.png"
                 alt=""
                 srcset=""
-                height="20px"
-                ;
-                width="20px"
-                ;margin-bottom:
-                4px;></p>
-
+                height="20px"; width="20px" ;margin-bottom:4px;></p>
     </div>
     <script>
         let i = document.getElementById('letsgo');
